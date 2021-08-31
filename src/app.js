@@ -24,14 +24,14 @@ app.use(express.static(publicDirPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "weather app",
-    name: "Sonu",
+    name: "Arimardan",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "about",
-    name: "Sonu",
+    name: "Arimardan",
   });
 });
 
@@ -39,7 +39,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     message: "Don't help him",
-    name: "Sonu",
+    name: "Arimardan",
   });
 });
 
@@ -72,7 +72,7 @@ app.get("/help/*", (req, res) => {
   res.render("error", {
     title: "Error",
     error: "Help article not found.",
-    name: "Sonu",
+    name: "Arimardan",
   });
 });
 
@@ -80,7 +80,7 @@ app.get("*", (req, res) => {
   res.render("error", {
     title: "Error",
     error: "Page not found.",
-    name: "Sonu",
+    name: "Arimardan",
   });
 });
 
